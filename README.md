@@ -4,22 +4,20 @@ An IoT based system that weighs water, shows the weight on a display, sends it t
 
 Built with an Arduino Uno, an ESP8266, a load cell, a small pump, and ThingSpeak.
 
----
-
 ## The problem
 
 In many industries (food and beverage units, chemical mixing, small process plants, labs) liquid has to be added in a fixed quantity again and again. Today this is mostly done by hand: someone watches a jug or a scale and closes the valve when it "looks right".
 
 This causes a few real problems:
 
-- **Wrong quantity.** Humans over-pour or under-pour, so batches are not consistent.
-- **Wasted material and time.** Someone has to stand there and watch every time.
-- **No record.** Nobody knows how much was actually dispensed or what the level is right now, unless they walk up to it.
-- **No remote control.** If the operator is not at the machine, nothing happens.
+- Wrong quantity. Humans over-pour or under-pour, so batches are not consistent.
+- Wasted material and time. Someone has to stand there and watch every time.
+- No record. Nobody knows how much was actually dispensed or what the level is right now, unless they walk up to it.
+- No remote control. If the operator is not at the machine, nothing happens.
 
-## Our solution
+# Our solution
 
-We built a system that measures liquid by **weight** instead of by eye, and controls the pump on its own.
+We built a system that measures liquid by 'Weight' instead of by eye, and controls the pump on its own.
 
 - A load cell under the container measures the weight all the time.
 - The weight is shown on a big LED display next to the machine and also uploaded to the cloud.
@@ -28,11 +26,9 @@ We built a system that measures liquid by **weight** instead of by eye, and cont
 
 We use weight because it is simple and reliable: 1 gram of water is 1 millilitre, so 150 g of extra weight means 150 ml of water.
 
----
 
 ## How it works (the big picture)
-
-```
+````
  ThingSpeak (cloud)
         ^
         |  WiFi
