@@ -1,0 +1,11 @@
+#ifndef SECRETS_H
+#define SECRETS_H
+
+#define WIFI_SSID       "YOUR_WIFI_NAME"
+#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
+
+#define TS_CHANNEL_ID   "YOUR_CHANNEL_ID"
+#define TS_WRITE_KEY    "YOUR_WRITE_API_KEY"
+#define TS_READ_KEY     "YOUR_READ_API_KEY"
+
+#endif
